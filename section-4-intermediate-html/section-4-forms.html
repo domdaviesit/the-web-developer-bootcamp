@@ -21,6 +21,10 @@
   <p>Validation adds rules to a form.eg password must be min 8 characters.</p>
   <p>Some validation can be done in plain html. You can add required attribute to the input.</p>
   <p>Data type validation. Does an email look like an email? eg @example.com. type = email.</p>
+  <p>radio buttons are typically if you have 1 choice (gender). Or closed questions.</p>
+  <p>with radio must add a value tag or result will just be "on".</p>
+  <p>Select adds a dropdown with options you can select.</p>
+  <p>textarea - to send data use the name attribute just like for other types of input.</p>
 
 
   <br>
@@ -40,6 +44,22 @@
     <input type="submit">
   </form>
 
+  <p>Do you prefer cats or dogs></p>
+  <form action="">
+    <label for="dogs">Dogs: </label>
+    <input type="radio" name="petChoice" id="dogs" value="dots">
+
+    <label for="cats">Cats: </label>
+    <input type="radio" name="petChoice" id="cats" value="cats">
+  </form>
+  <br>
+  <p>Whats your favorite color?</p>
+  <select name="" id="">
+    <option value="">Red</option>
+    <option value="">Yellow</option>
+    <option value="">Orange </option>
+  </select>
+  <button>Go!</button>
 </body>
 
 </html>
