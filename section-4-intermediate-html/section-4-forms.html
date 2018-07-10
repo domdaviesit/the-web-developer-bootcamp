@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Forms</title>
+</head>
+
+<body>
+  <h1>Forms</h1>
+  <p>action is where the form sends data to.</p>
+  <p>method is the type of HTTP method (get/post)</p>
+  <p>get is like a google search</p>
+  <p>post is where you post data to a data base</p>
+  <p>name attribute - you can give a name to the data you are collecting/sending. eg username = johndoe.</p>
+  <p>Labels add captions to the elements of the form.</p>
+  <p>Labels are great for ACCESSIBILITY</p>
+  <p>label for corresponds to input id (good for screen readers)</p>
+  <p>Validation adds rules to a form.eg password must be min 8 characters.</p>
+  <p>Some validation can be done in plain html. You can add required attribute to the input.</p>
+  <p>Data type validation. Does an email look like an email? eg @example.com. type = email.</p>
+
+
+  <br>
+  <h2>Login</h2>
+
+  <form>
+    <!-- using for and id to link username fields -->
+    <label for="username">Username:</label>
+    <input type="text" id="username" placeholder="username" required>
+    <br>
+    <label for="">Password:</label>
+    <input type="password" placeholder="password">
+    <br>
+
+    <!-- <button>Submit</button> -->
+    <!-- another way of making a button -->
+    <input type="submit">
+  </form>
+
+</body>
+
+</html>
