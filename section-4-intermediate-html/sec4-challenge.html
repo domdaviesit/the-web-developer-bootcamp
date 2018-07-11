@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Register with us</title>
+</head>
+
+<body>
+  <!-- code form from picture -->
+  <!-- Bonus: length validation for password field -->
+  <h1>Register</h1>
+  <form action="">
+    <!-- Name -->
+    <label for="firstname">First Name:</label>
+    <input type="text" placeholder="John" required id="firstname" name="firstname">
+    <label for="lastname">Last Name:</label>
+    <input type="text" placeholder="Smith" required id="lastname" name="lastname">
+    <!-- Male or Female -->
+    <div>
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="male" value="male">
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="female" value="female">
+      <label for="other">Other</label>
+      <input type="radio" name="gender" id="other" value="other">
+    </div>
+    <!-- Email and Password Fields -->
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" placeholder="your email" required name="email">
+      <label for="password">Password</label>
+      <!-- required title appears in the validation message -->
+      <input type="password" placeholder="your password" pattern=".{5,10}" required title="5 to 10 characters">
+      <!-- my solution: minLength not supported by all browsers -->
+      <!-- <input type="password" placeholder="your password" required minLength="8" name="password"> -->
+    </div>
+    <!-- Birthday - Month -- Day --- Year -->
+    <div>
+      <label for="birthday">Birthday</label>
+      <select name="month" id="month">
+        <option value="month">Month</option>
+        <option value="jan">Jan</option>
+        <option value="feb">Feb</option>
+      </select>
+      <select name="day" id="day">
+        <option value="day">Day</option>
+        <option value="dmn">Mon</option>
+      </select>
+      <select name="year" id="year">
+        <option value="year">Year</option>
+        <option value="2000">2000</option>
+      </select>
+    </div>
+    <!-- Terms and Conditions -->
+    <div>
+      <label for="terms">I agree to the terms and conditions</label>
+      <input type="checkbox" id="terms">
+    </div>
+    <input type="submit">
+  </form>
+
+</body>
+
+</html>
